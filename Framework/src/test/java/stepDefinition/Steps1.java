@@ -1,8 +1,8 @@
 package stepDefinition;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import PageObjects.LoginPage1;
 import io.cucumber.java.en.Given;
@@ -24,7 +24,7 @@ public class Steps1
 		//chromeOptions.addArguments("--remote-allow-origins=*");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver=new ChromeDriver();
+		//driver=new ChromeDriver();
 		driver.manage().window().maximize(); 
 		lp=new LoginPage1(driver);
 	}
